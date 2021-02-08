@@ -1,0 +1,99 @@
+@plus-radius:65px;
+
+
+.bg-white {
+  background-color: #fff;
+  margin-top: 0px;
+}
+
+ol {
+  padding: 0;
+  height: 500px;
+  list-style: none;
+  margin-block-start: 0em;
+  overflow: auto;
+  li {
+    &[favorites='yes'] {
+      border-right-color: #ccc;
+    }
+    min-height: 32px;
+    line-height: 32px;
+    background: #fff;
+    position: relative;
+    margin-bottom: 10px;
+    padding: 0 20px;
+    border-radius: 3px;
+    word-wrap:break-word; 
+    word-break:break-all; 
+    // overflow: hidden;
+    input {
+      width: 22px;
+      height: 22px;
+      cursor: pointer;
+      vertical-align: middle;
+      margin-right: 20px;    
+
+        
+    }
+
+    span {  
+      display: inline-block;
+      width: 75%;
+      word-wrap:break-word; 
+    word-break:break-all; 
+    }
+    .delete {
+      position: absolute;
+      top: 2px;
+      right: 25px;
+      display: inline-block;
+      width: 14px;
+      height: 12px;
+      border-radius: 14px;
+      border: 6px double #FFF;
+      background: #CCC;
+      line-height: 14px;
+      text-align: center;
+      color: #FFF;
+      font-weight: bold;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .favorites {
+      position: absolute;
+      top: 3px;
+      right: 1px;
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border-radius: 14px;
+      border: 6px double #fff;
+      background: springgreen;
+      line-height: 10px;
+      text-align: center;
+      color: #FFF;
+      font-weight: bold;
+      font-size: 14px;
+      cursor: pointer;
+    }
+  }
+}
+
+.el-icon-plus {
+  cursor: pointer;
+  margin-left: 50%;
+  transform: translate(-50%,10%);
+  font-size: 25px;
+  text-align: center;
+  background-color: #FFBA74;
+  border-radius: 50%;
+  height: @plus-radius;
+  width: @plus-radius;
+  &::before {
+    line-height: @plus-radius;
+    font-weight:900;
+    color: #fff;
+  }
+}
+
